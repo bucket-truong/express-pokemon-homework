@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+
     <title></title>
   </head>
   <body>
+    <h1>POKEMON</h1>
+    <ul class='pokemon' style>
+       <% for (let i=0; i<pokemon.length; i++) {%>
+       <a href="/index/<%= i %>">
+            <li>
+               <%= pokemon[i].name %>
+           </li>
+       </a>
+       <% } %>
 
+       <style>
+         h1 {color:red; text-align:center; font-family: 'Dokdo', cursive;}
+         ul {text-align:center; font-family: 'Dokdo', cursive; list-style-position:inside}
+       </style>
+   </ul>
   </body>
 </html>
