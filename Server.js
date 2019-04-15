@@ -11,6 +11,8 @@ app.get('/index/:id', (req, res) => {
   res.render('show.ejs', {pokemon: Pokemon[req.params.id]})
 })
 
+app.use(express.static('/public'))
+
 const port = 3000;
 
 app.listen(3000, () => {
