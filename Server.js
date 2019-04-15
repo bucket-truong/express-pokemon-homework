@@ -7,6 +7,10 @@ app.get('/pokemon', (req,res) => {
   res.render('index.ejs', {pokemon: Pokemon})
 });
 
+app.get('/index/:id', (req, res) => {
+  res.render('show.ejs', {pokemon: Pokemon[req.params.id]})
+})
+
 const port = 3000;
 
 app.listen(3000, () => {
