@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express()
 
+
 const Pokemon  = require('./models/pokemon.js')
 
 app.get('/pokemon', (req,res) => {
@@ -11,7 +12,7 @@ app.get('/index/:id', (req, res) => {
   res.render('show.ejs', {pokemon: Pokemon[req.params.id]})
 })
 
-app.use(express.static('/public'))
+app.use('/css', express.static('css'))
 
 const port = 3000;
 

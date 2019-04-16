@@ -1,0 +1,15 @@
+body {
+  background-color: #ede4a6;
+  text-align: center;
+  font-family: 'Dokdo', cursive;
+}
+h1 {
+  color:red;
+  text-align:center;
+  font-family: 'Dokdo', cursive;
+}
+ul {
+  text-align:center;
+  font-family: 'Dokdo', cursive;
+  list-style-position:inside
+}
