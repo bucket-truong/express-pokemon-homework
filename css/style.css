@@ -1,8 +1,11 @@
 body {
-  background-color: #ede4a6;
+  background-image: url(https://wallportal.com/uploads/posts/charmander-wallpaper-hd/charmander_wallpaper_hd_001.jpg);
   text-align: center;
   font-family: 'Dokdo', cursive;
-}
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;}
 h1 {
   color:red;
   text-align:center;
@@ -12,4 +15,18 @@ ul {
   text-align:center;
   font-family: 'Dokdo', cursive;
   list-style-position:inside
+}
+p {
+  color: red;
+}
+form {
+  color: #00ff19;
+}
+h2 {
+  color: #00ff19;
+}
+button {
+  color: #00ff19;
+  background-color: red;
+  font-family: 'Dokdo', cursive;
 }

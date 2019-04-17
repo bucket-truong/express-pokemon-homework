@@ -8,16 +8,20 @@
   </head>
   <body>
     <h1>POKEMON</h1>
-    <ul class='pokemon' style>
+    <ul class='pokemon'>
        <% for (let i=0; i<pokemon.length; i++) {%>
-       <a href="/index/<%= i %>">
+       <a href="/pokemon<%=i%>">
             <li>
-               <%= pokemon[i].name %>
+               <%=pokemon[i].name%>
            </li>
        </a>
+       <form action="/pokemon/<%=i%>?_method=DELETE" method="POST">
+              <button type="submit">Delete</button>
+            </form>
        <% } %>
 
    </ul>
+   <a href="/pokemon/new">Create a New Pokemon!</a>
 
 
   </body>
